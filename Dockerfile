@@ -34,6 +34,4 @@ RUN apt update -qq -y;\
 USER ubuntu
 
 WORKDIR /app
-
-VOLUME /data
 EXPOSE 3000
