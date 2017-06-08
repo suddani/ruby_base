@@ -20,7 +20,7 @@ RUN apt update -qq -y;\
                       # ncurses-dev\
                       automake\
                       libtool;\
-    useradd -s /bin/bash ubuntu; \
+    useradd -m -s /bin/bash ubuntu; \
     chgrp -R ubuntu /usr/local; \
     find /usr/local -type d | xargs chmod g+w; \
     mkdir /etc/sudoers.d; \
